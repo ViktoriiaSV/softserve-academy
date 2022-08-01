@@ -11,10 +11,11 @@
         let secondsPerMinute = 60;
         let secondsPerHour = secondsPerMinute * 60;
         let secondsInDay = secondsPerHour * 24;
-        let secondsPerMonth = secondsInDay * 30;
-        alert(secondsPerHour);
-        alert(secondsInDay);
-        alert(secondsPerMonth);
+        let dayInMonth = prompt (`Please, input number of days in this month`)
+        let secondsPerMonth = secondsInDay * dayInMonth;
+        alert(`seconds per hour: ${secondsPerHour}`);
+        alert(`seconds in day: ${secondsInDay}`);
+        alert(`seconds per this month: ${secondsPerMonth}`);
     </script>
 </body>
 </html>
