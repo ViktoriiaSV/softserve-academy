@@ -3,7 +3,7 @@
 let arr = [2, 3, 4, 5];
 
 let result = 1;
-for (let i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i+=1) {
   result *= arr[i];
 }
 console.log(result);
@@ -12,13 +12,13 @@ let resultNew = 1;
 i = 0;
 while (i < arr.length) {
   resultNew *= arr[i];
-  i++;
+  i+=1;
 }
 console.log(resultNew);
 
 //2
 
-for (i = 0; i <= 15; i++) {
+for (i = 0; i <= 15; i+=1) {
   if (i === 0) {
     console.log(i + " is even");
   } else if (i % 2 === 0) {
@@ -32,7 +32,7 @@ for (i = 0; i <= 15; i++) {
 
 k = [];
 function randArray() {
-  for (i = 1; i <= 5; i++) {
+  for (i = 1; i <= 5; i+=1) {
     k.push(Math.round(Math.random() * 500));
   }
   console.log(k);
@@ -54,7 +54,7 @@ raiseToDegree(numberOne, numberTwo);
 
 function findMin() {
   let result = 1;
-  for (let i = 0; i < arguments.length; i++) {
+  for (let i = 0; i < arguments.length; i+=1) {
     result = Math.min(arguments[i]);
   }
   console.log(result);
